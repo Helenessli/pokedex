@@ -1,0 +1,82 @@
+<%= form_with(model: pokemon) do |form| %>
+  <% if pokemon.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pokemon.errors.count, "error") %> prohibited this pokemon from being saved:</h2>
+
+      <ul>
+        <% pokemon.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :number, style: "display: block" %>
+    <%= form.number_field :number %>
+  </div>
+
+  <div>
+    <%= form.label :male, style: "display: block" %>
+    <%= form.checkbox :male %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.textarea :description %>
+  </div>
+
+  <div>
+    <%= form.label :hp, style: "display: block" %>
+    <%= form.number_field :hp %>
+  </div>
+
+  <div>
+    <%= form.label :atk, style: "display: block" %>
+    <%= form.number_field :atk %>
+  </div>
+
+  <div>
+    <%= form.label :def, style: "display: block" %>
+    <%= form.number_field :def %>
+  </div>
+
+  <div>
+    <%= form.label :spatk, style: "display: block" %>
+    <%= form.number_field :spatk %>
+  </div>
+
+  <div>
+    <%= form.label :spdef, style: "display: block" %>
+    <%= form.number_field :spdef %>
+  </div>
+
+  <div>
+    <%= form.label :spd, style: "display: block" %>
+    <%= form.number_field :spd %>
+  </div>
+
+  <div>
+    <%= form.label :tot, style: "display: block" %>
+    <%= form.number_field :tot %>
+  </div>
+
+  <div>
+    <%= form.label :height, style: "display: block" %>
+    <%= form.text_field :height %>
+  </div>
+
+  <div>
+    <%= form.label :weight, style: "display: block" %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

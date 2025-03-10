@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  number: 1
+  male: false
+  description: MyText
+  hp: 1
+  atk: 1
+  def: 1
+  spatk: 1
+  spdef: 1
+  spd: 1
+  tot: 1
+  height: 1.5
+  weight: 1.5
+
+two:
+  name: MyString
+  number: 1
+  male: false
+  description: MyText
+  hp: 1
+  atk: 1
+  def: 1
+  spatk: 1
+  spdef: 1
+  spd: 1
+  tot: 1
+  height: 1.5
+  weight: 1.5
