@@ -15,7 +15,9 @@
             
             <div class="d-flex justify-content-center gap-2">
               <!-- Placeholder for type badges -->
-              <span class="badge bg-success rounded-pill px-3 py-2">TYPE</span>
+              <% pokemon.types.each do |type| %>
+                <span class="badge rounded-pill px-3 py-2 mx-1" style="background-color: <%= type.color_code %>"><%= type.name.upcase %></span>
+              <% end %>
             </div>
           </div>
         </div>

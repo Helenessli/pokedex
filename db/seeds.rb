@@ -1,3 +1,37 @@
+# Clear existing data
+Pokemon.destroy_all
+Type.destroy_all
+PokemonType.destroy_all
+
+# Create types with their color codes
+types = [
+  { name: "Normal", color_code: "#A8A878" },
+  { name: "Fire", color_code: "#F08030" },
+  { name: "Water", color_code: "#6890F0" },
+  { name: "Electric", color_code: "#F8D030" },
+  { name: "Grass", color_code: "#78C850" },
+  { name: "Ice", color_code: "#98D8D8" },
+  { name: "Fighting", color_code: "#C03028" },
+  { name: "Poison", color_code: "#A040A0" },
+  { name: "Ground", color_code: "#E0C068" },
+  { name: "Flying", color_code: "#A890F0" },
+  { name: "Psychic", color_code: "#F85888" },
+  { name: "Bug", color_code: "#A8B820" },
+  { name: "Rock", color_code: "#B8A038" },
+  { name: "Ghost", color_code: "#705898" },
+  { name: "Dragon", color_code: "#7038F8" },
+  { name: "Dark", color_code: "#705848" },
+  { name: "Steel", color_code: "#B8B8D0" },
+  { name: "Fairy", color_code: "#EE99AC" }
+]
+
+# Create all types
+created_types = {}
+types.each do |type_data|
+  created_type = Type.create!(type_data)
+  created_types[created_type.name] = created_type
+end
+
 pokemons = [
   {
     name: "Bulbasaur",
@@ -13,7 +47,8 @@ pokemons = [
     tot: 318,
     height: 0.7,
     weight: 6.9,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/bulbasaur.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/bulbasaur.png",
+    types: ["Grass", "Poison"]
   },
   {
     name: "Ivysaur",
@@ -29,7 +64,8 @@ pokemons = [
     tot: 405,
     height: 1.0,
     weight: 13.0,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/ivysaur.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/ivysaur.png",
+    types: ["Grass", "Poison"]
   },
   {
     name: "Venusaur",
@@ -45,7 +81,8 @@ pokemons = [
     tot: 525,
     height: 2.0,
     weight: 100.0,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/venusaur.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/venusaur.png",
+    types: ["Grass", "Poison"]
   },
   {
     name: "Charmander",
@@ -61,7 +98,8 @@ pokemons = [
     tot: 309,
     height: 0.6,
     weight: 8.5,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/charmander.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/charmander.png",
+    types: ["Fire"]
   },
   {
     name: "Charmeleon",
@@ -77,7 +115,8 @@ pokemons = [
     tot: 405,
     height: 1.1,
     weight: 19.0,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/charmeleon.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/charmeleon.png",
+    types: ["Fire"]
   },
   {
     name: "Charizard",
@@ -93,7 +132,8 @@ pokemons = [
     tot: 534,
     height: 1.7,
     weight: 90.5,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/charizard.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/charizard.png",
+    types: ["Fire", "Flying"]
   },
   {
     name: "Squirtle",
@@ -109,7 +149,8 @@ pokemons = [
     tot: 314,
     height: 0.5,
     weight: 9.0,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/squirtle.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/squirtle.png",
+    types: ["Water"]
   },
   {
     name: "Wartortle",
@@ -125,7 +166,8 @@ pokemons = [
     tot: 405,
     height: 1.0,
     weight: 22.5,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/wartortle.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/wartortle.png",
+    types: ["Water"]
   },
   {
     name: "Blastoise",
@@ -141,7 +183,8 @@ pokemons = [
     tot: 530,
     height: 1.6,
     weight: 85.5,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/blastoise.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/blastoise.png",
+    types: ["Water"]
   },
   {
     name: "Caterpie",
@@ -157,7 +200,8 @@ pokemons = [
     tot: 195,
     height: 0.3,
     weight: 2.9,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/caterpie.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/caterpie.png",
+    types: ["Bug"]
   },
   {
     name: "Pikachu",
@@ -173,14 +217,381 @@ pokemons = [
     tot: 320,
     height: 0.4,
     weight: 6.0,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/pikachu.png"
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/pikachu.png",
+    types: ["Electric"]
+  },
+  {
+    name: "Metapod",
+    number: 11,
+    male: true,
+    description: "Its shell is as hard as an iron slab. A Metapod does not move very much because it is preparing its soft innards for evolution inside the shell.",
+    hp: 50,
+    atk: 20,
+    def: 55,
+    spatk: 25,
+    spdef: 25,
+    spd: 30,
+    tot: 205,
+    height: 0.7,
+    weight: 9.9,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/metapod.png",
+    types: ["Bug"]
+  },
+  {
+    name: "Butterfree",
+    number: 12,
+    male: true,
+    description: "It collects honey every day. It rubs honey onto the hairs on its legs to carry it back to its nest.",
+    hp: 60,
+    atk: 45,
+    def: 50,
+    spatk: 90,
+    spdef: 80,
+    spd: 70,
+    tot: 395,
+    height: 1.1,
+    weight: 32.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/butterfree.png",
+    types: ["Bug", "Flying"]
+  },
+  {
+    name: "Weedle",
+    number: 13,
+    male: true,
+    description: "Often found in forests and grasslands. It has a sharp, toxic barb of around two inches on top of its head.",
+    hp: 40,
+    atk: 35,
+    def: 30,
+    spatk: 20,
+    spdef: 20,
+    spd: 50,
+    tot: 195,
+    height: 0.3,
+    weight: 3.2,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/weedle.png",
+    types: ["Bug", "Poison"]
+  },
+  {
+    name: "Kakuna",
+    number: 14,
+    male: true,
+    description: "Almost incapable of moving, this Pokémon can only harden its shell to protect itself when it is in danger.",
+    hp: 45,
+    atk: 25,
+    def: 50,
+    spatk: 25,
+    spdef: 25,
+    spd: 35,
+    tot: 205,
+    height: 0.6,
+    weight: 10.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/kakuna.png",
+    types: ["Bug", "Poison"]
+  },
+  {
+    name: "Beedrill",
+    number: 15,
+    male: true,
+    description: "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
+    hp: 65,
+    atk: 90,
+    def: 40,
+    spatk: 45,
+    spdef: 80,
+    spd: 75,
+    tot: 395,
+    height: 1.0,
+    weight: 29.5,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/beedrill.png",
+    types: ["Bug", "Poison"]
+  },
+  {
+    name: "Pidgey",
+    number: 16,
+    male: true,
+    description: "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
+    hp: 40,
+    atk: 45,
+    def: 40,
+    spatk: 35,
+    spdef: 35,
+    spd: 56,
+    tot: 251,
+    height: 0.3,
+    weight: 1.8,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/pidgey.png",
+    types: ["Normal", "Flying"]
+  },
+  {
+    name: "Pidgeotto",
+    number: 17,
+    male: true,
+    description: "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.",
+    hp: 63,
+    atk: 60,
+    def: 55,
+    spatk: 50,
+    spdef: 50,
+    spd: 71,
+    tot: 349,
+    height: 1.1,
+    weight: 30.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/pidgeotto.png",
+    types: ["Normal", "Flying"]
+  },
+  {
+    name: "Pidgeot",
+    number: 18,
+    male: true,
+    description: "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.",
+    hp: 83,
+    atk: 80,
+    def: 75,
+    spatk: 70,
+    spdef: 70,
+    spd: 101,
+    tot: 479,
+    height: 1.5,
+    weight: 39.5,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/pidgeot.png",
+    types: ["Normal", "Flying"]
+  },
+  {
+    name: "Rattata",
+    number: 19,
+    male: true,
+    description: "Will chew on anything with its fangs. If you see one, it is certain that 40 more live in the area.",
+    hp: 30,
+    atk: 56,
+    def: 35,
+    spatk: 25,
+    spdef: 35,
+    spd: 72,
+    tot: 253,
+    height: 0.3,
+    weight: 3.5,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/rattata.png",
+    types: ["Normal"]
+  },
+  {
+    name: "Raticate",
+    number: 20,
+    male: true,
+    description: "Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.",
+    hp: 55,
+    atk: 81,
+    def: 60,
+    spatk: 50,
+    spdef: 70,
+    spd: 97,
+    tot: 413,
+    height: 0.7,
+    weight: 18.5,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/raticate.png",
+    types: ["Normal"]
+  },
+  {
+    name: "Spearow",
+    number: 21,
+    male: true,
+    description: "Inept at flying high. However, it can fly around very fast to protect its territory.",
+    hp: 40,
+    atk: 60,
+    def: 30,
+    spatk: 31,
+    spdef: 31,
+    spd: 70,
+    tot: 262,
+    height: 0.3,
+    weight: 2.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/spearow.png",
+    types: ["Normal", "Flying"]
+  },
+  {
+    name: "Fearow",
+    number: 22,
+    male: true,
+    description: "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.",
+    hp: 65,
+    atk: 90,
+    def: 65,
+    spatk: 61,
+    spdef: 61,
+    spd: 100,
+    tot: 442,
+    height: 1.2,
+    weight: 38.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/fearow.png",
+    types: ["Normal", "Flying"]
+  },
+  {
+    name: "Ekans",
+    number: 23,
+    male: true,
+    description: "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.",
+    hp: 35,
+    atk: 60,
+    def: 44,
+    spatk: 40,
+    spdef: 54,
+    spd: 55,
+    tot: 288,
+    height: 2.0,
+    weight: 6.9,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/ekans.png",
+    types: ["Poison"]
+  },
+  {
+    name: "Arbok",
+    number: 24,
+    male: true,
+    description: "The frightening patterns on its belly have been studied. Six variations have been confirmed.",
+    hp: 60,
+    atk: 95,
+    def: 69,
+    spatk: 65,
+    spdef: 79,
+    spd: 80,
+    tot: 448,
+    height: 3.5,
+    weight: 65.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/arbok.png",
+    types: ["Poison"]
+  },
+  {
+    name: "Raichu",
+    number: 26,
+    male: true,
+    description: "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+    hp: 60,
+    atk: 90,
+    def: 55,
+    spatk: 90,
+    spdef: 80,
+    spd: 110,
+    tot: 485,
+    height: 0.8,
+    weight: 30.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/raichu.png",
+    types: ["Electric"]
+  },
+  {
+    name: "Sandshrew",
+    number: 27,
+    male: true,
+    description: "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+    hp: 50,
+    atk: 75,
+    def: 85,
+    spatk: 20,
+    spdef: 30,
+    spd: 40,
+    tot: 300,
+    height: 0.6,
+    weight: 12.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/sandshrew.png",
+    types: ["Ground"]
+  },
+  {
+    name: "Sandslash",
+    number: 28,
+    male: true,
+    description: "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+    hp: 75,
+    atk: 100,
+    def: 110,
+    spatk: 45,
+    spdef: 55,
+    spd: 65,
+    tot: 450,
+    height: 1.0,
+    weight: 29.5,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/sandslash.png",
+    types: ["Ground"]
+  },
+  {
+    name: "Nidoran♀",
+    number: 29,
+    male: false,
+    description: "Although small, its venomous barbs render this Pokémon dangerous. The female has smaller horns.",
+    hp: 55,
+    atk: 47,
+    def: 52,
+    spatk: 40,
+    spdef: 40,
+    spd: 41,
+    tot: 275,
+    height: 0.4,
+    weight: 7.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidoran.png",
+    types: ["Poison"]
+  },
+  {
+    name: "Nidorina",
+    number: 30,
+    male: false,
+    description: "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
+    hp: 70,
+    atk: 62,
+    def: 67,
+    spatk: 55,
+    spdef: 55,
+    spd: 56,
+    tot: 365,
+    height: 0.8,
+    weight: 20.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidorina.png",
+    types: ["Poison"]
+  },
+  {
+    name: "Mewtwo",
+    number: 150,
+    male: false,
+    description: "It was created by a scientist after years of horrific gene-splicing and DNA-engineering experiments.",
+    hp: 106,
+    atk: 110,
+    def: 90,
+    spatk: 154,
+    spdef: 90,
+    spd: 130,
+    tot: 680,
+    height: 2.0,
+    weight: 122.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/mewtwo.png",
+    types: ["Psychic"]
+  },
+  {
+    name: "Mew",
+    number: 151,
+    male: false,
+    description: "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
+    hp: 100,
+    atk: 100,
+    def: 100,
+    spatk: 100,
+    spdef: 100,
+    spd: 100,
+    tot: 600,
+    height: 0.4,
+    weight: 4.0,
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/mew.png",
+    types: ["Psychic"]
   }
 ]
 
-# Clear existing Pokemon data
-Pokemon.destroy_all
-
-# Insert the new Pokemon data
+# Insert the Pokemon data and associate with types
 pokemons.each do |pokemon_data|
-  Pokemon.create!(pokemon_data)
+  # Extract the types array from the pokemon data
+  pokemon_types = pokemon_data.delete(:types)
+  
+  # Create the Pokemon
+  pokemon = Pokemon.create!(pokemon_data)
+  
+  # Associate the Pokemon with its types
+  pokemon_types.each do |type_name|
+    PokemonType.create!(
+      pokemon: pokemon,
+      type: created_types[type_name]
+    )
+  end
 end
