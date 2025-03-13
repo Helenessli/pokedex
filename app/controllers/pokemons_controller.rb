@@ -8,6 +8,7 @@ class PokemonsController < ApplicationController
 
   # GET /pokemons/1 or /pokemons/1.json
   def show
+    @pokemon = Pokemon.find(params[:id])
   end
 
   # GET /pokemons/new

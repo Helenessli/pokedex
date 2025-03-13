@@ -2,25 +2,26 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
     <% @pokemons.each do |pokemon| %>
       <div class="col mb-4">
-        <div class="card h-100 shadow" style="border: none; border-radius: 1rem;">
-          <div class="card-body text-center">
-            <div class="d-flex justify-content-center mb-3">
-              <div class="d-flex align-items-center justify-content-center" style="width: 96px; height: 96px;">
-                <img src="https://img.pokemondb.net/sprites/x-y/normal/<%= pokemon.name.downcase %>.png" alt="Bulbasaur" style="width: 250px; height: auto;">
+        <%= link_to pokemon_path(pokemon), class: "text-decoration-none" do %>
+          <div class="card h-100 shadow" style="border: none; border-radius: 1rem;">
+            <div class="card-body text-center">
+              <div class="d-flex justify-content-center mb-3">
+                <div class="d-flex align-items-center justify-content-center" style="width: 96px; height: 96px;">
+                  <img src="https://img.pokemondb.net/sprites/x-y/normal/<%= pokemon.name.downcase %>.png" alt="<%= pokemon.name %>" style="width: 250px; height: auto;">
+                </div>
+              </div>
+              
+              <p class="text-muted mb-1">N°<%= pokemon.number %></p>
+              <h5 class="card-title fw-bold mb-3" style="color: black;"><%= pokemon.name %></h5>
+              
+              <div class="d-flex justify-content-center gap-2">
+                <% pokemon.types.each do |type| %>
+                  <span class="badge rounded-pill px-3 py-2 mx-1" style="background-color: <%= type.color_code %>; color: black;"><%= type.name.upcase %></span>
+                <% end %>
               </div>
             </div>
-            
-            <p class="text-muted mb-1">N°<%= pokemon.number %></p>
-            <h5 class="card-title fw-bold mb-3"><%= pokemon.name %></h5>
-            
-            <div class="d-flex justify-content-center gap-2">
-              <!-- Placeholder for type badges -->
-              <% pokemon.types.each do |type| %>
-                <span class="badge rounded-pill px-3 py-2 mx-1" style="background-color: <%= type.color_code %>"><%= type.name.upcase %></span>
-              <% end %>
-            </div>
           </div>
-        </div>
+        <% end %>
       </div>
     <% end %>
   </div>

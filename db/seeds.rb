@@ -510,7 +510,7 @@ pokemons = [
     types: ["Ground"]
   },
   {
-    name: "Nidoran-f",
+    name: "Nidoran♀",
     number: 29,
     male: false,
     description: "Although small, its venomous barbs render this Pokémon dangerous. The female has smaller horns.",
@@ -561,7 +561,7 @@ pokemons = [
     types: ["Poison", "Ground"]
   },
   {
-    name: "Nidoran-m",
+    name: "Nidoran♂",
     number: 32,
     male: true,
     description: "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
