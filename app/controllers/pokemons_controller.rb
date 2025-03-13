@@ -58,6 +58,16 @@ class PokemonsController < ApplicationController
     end
   end
 
+  def search
+    query = params[:query]
+    @pokemons = if query.present?
+                  Pokemon.where("name LIKE ? COLLATE NOCASE", "%#{query}%")
+                else
+                  Pokemon.all
+                end
+    render 'home/index'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pokemon
