@@ -523,7 +523,7 @@ pokemons = [
     tot: 275,
     height: 0.4,
     weight: 7.0,
-    image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidoran.png",
+    image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidoran-f.png",
     types: ["Poison"]
   },
   {

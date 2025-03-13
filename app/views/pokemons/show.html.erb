@@ -11,7 +11,7 @@
           
           <div class="d-flex justify-content-center gap-2 mb-3">
             <% @pokemon.types.each do |type| %>
-              <span class="badge rounded-pill px-3 py-2" style="background-color: <%= type.color_code %>; color: black !important;"><%= type.name.upcase %></span>
+              <span class="badge rounded-pill px-3 py-2 mx-1" style="background-color: <%= type.color_code %>; color: black !important;"><%= type.name.upcase %></span>
             <% end %>
           </div>
           
