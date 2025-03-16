@@ -1,0 +1,12 @@
+<div class="p-4 rounded-4" style="background-color: white;">
+  <%= form_with url: search_path, method: :get, class: "d-flex justify-content-center w-100" do |f| %>
+      <%= f.text_field :query, 
+          class: "form-control form-control-lg me-2", 
+          style: "width: 80%; max-width: 800px; padding: 15px; font-size: 1.2rem; border-radius: 25px; background-color: transparent;",
+          placeholder: "Search your Pokémon!", 
+          "aria-label": "Search" %>
+      <%= button_tag type: 'submit', class: "btn btn-outline-success btn-lg" do %>
+        <%= image_tag "pokeball.png", height: 30, alt: "Search" %>
+      <% end %>
+  <% end %>
+</div>
