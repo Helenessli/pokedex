@@ -1,0 +1,37 @@
+.evolution-family {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.evolution-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.evolution-branch {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.evolution-stage {
+  text-align: center;
+}
+
+.evolution-arrow {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.pokemon-sprite {
+  width: 96px;
+  height: 96px;
+}
+
+.evolution-details {
+  font-size: 0.8rem;
+  color: #666;
+} 

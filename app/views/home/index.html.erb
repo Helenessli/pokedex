@@ -1,4 +1,5 @@
-<div class="container py-4">
+<div class="container py-2">
+
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
     <% @pokemons.each do |pokemon| %>
       <div class="col mb-4">
@@ -24,5 +25,12 @@
         <% end %>
       </div>
     <% end %>
+  </div>
+
+  <!-- Pagination links at the bottom -->
+  <div class="d-flex justify-content-center mt-4">
+    <nav class="pokemon-pagination">
+      <%= paginate @pokemons %>
+    </nav>
   </div>
 </div>

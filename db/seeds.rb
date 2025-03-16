@@ -48,7 +48,7 @@ pokemons = [
     height: 0.7,
     weight: 6.9,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/bulbasaur.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Ivysaur",
@@ -65,7 +65,7 @@ pokemons = [
     height: 1.0,
     weight: 13.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/ivysaur.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Venusaur",
@@ -82,7 +82,7 @@ pokemons = [
     height: 2.0,
     weight: 100.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/venusaur.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Charmander",
@@ -99,7 +99,7 @@ pokemons = [
     height: 0.6,
     weight: 8.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/charmander.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Charmeleon",
@@ -116,7 +116,7 @@ pokemons = [
     height: 1.1,
     weight: 19.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/charmeleon.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Charizard",
@@ -133,7 +133,7 @@ pokemons = [
     height: 1.7,
     weight: 90.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/charizard.png",
-    types: ["Fire", "Flying"]
+    types: [ "Fire", "Flying" ]
   },
   {
     name: "Squirtle",
@@ -150,7 +150,7 @@ pokemons = [
     height: 0.5,
     weight: 9.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/squirtle.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Wartortle",
@@ -167,7 +167,7 @@ pokemons = [
     height: 1.0,
     weight: 22.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/wartortle.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Blastoise",
@@ -184,7 +184,7 @@ pokemons = [
     height: 1.6,
     weight: 85.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/blastoise.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Caterpie",
@@ -201,7 +201,7 @@ pokemons = [
     height: 0.3,
     weight: 2.9,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/caterpie.png",
-    types: ["Bug"]
+    types: [ "Bug" ]
   },
   {
     name: "Pikachu",
@@ -218,7 +218,7 @@ pokemons = [
     height: 0.4,
     weight: 6.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/pikachu.png",
-    types: ["Electric"]
+    types: [ "Electric" ]
   },
   {
     name: "Metapod",
@@ -235,7 +235,7 @@ pokemons = [
     height: 0.7,
     weight: 9.9,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/metapod.png",
-    types: ["Bug"]
+    types: [ "Bug" ]
   },
   {
     name: "Butterfree",
@@ -252,7 +252,7 @@ pokemons = [
     height: 1.1,
     weight: 32.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/butterfree.png",
-    types: ["Bug", "Flying"]
+    types: [ "Bug", "Flying" ]
   },
   {
     name: "Weedle",
@@ -269,7 +269,7 @@ pokemons = [
     height: 0.3,
     weight: 3.2,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/weedle.png",
-    types: ["Bug", "Poison"]
+    types: [ "Bug", "Poison" ]
   },
   {
     name: "Kakuna",
@@ -286,7 +286,7 @@ pokemons = [
     height: 0.6,
     weight: 10.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/kakuna.png",
-    types: ["Bug", "Poison"]
+    types: [ "Bug", "Poison" ]
   },
   {
     name: "Beedrill",
@@ -303,7 +303,7 @@ pokemons = [
     height: 1.0,
     weight: 29.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/beedrill.png",
-    types: ["Bug", "Poison"]
+    types: [ "Bug", "Poison" ]
   },
   {
     name: "Pidgey",
@@ -320,7 +320,7 @@ pokemons = [
     height: 0.3,
     weight: 1.8,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/pidgey.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Pidgeotto",
@@ -337,7 +337,7 @@ pokemons = [
     height: 1.1,
     weight: 30.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/pidgeotto.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Pidgeot",
@@ -354,7 +354,7 @@ pokemons = [
     height: 1.5,
     weight: 39.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/pidgeot.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Rattata",
@@ -371,7 +371,7 @@ pokemons = [
     height: 0.3,
     weight: 3.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/rattata.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Raticate",
@@ -388,7 +388,7 @@ pokemons = [
     height: 0.7,
     weight: 18.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/raticate.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Spearow",
@@ -405,7 +405,7 @@ pokemons = [
     height: 0.3,
     weight: 2.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/spearow.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Fearow",
@@ -422,7 +422,7 @@ pokemons = [
     height: 1.2,
     weight: 38.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/fearow.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Ekans",
@@ -439,7 +439,7 @@ pokemons = [
     height: 2.0,
     weight: 6.9,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/ekans.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Arbok",
@@ -456,7 +456,7 @@ pokemons = [
     height: 3.5,
     weight: 65.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/arbok.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Raichu",
@@ -473,7 +473,7 @@ pokemons = [
     height: 0.8,
     weight: 30.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/raichu.png",
-    types: ["Electric"]
+    types: [ "Electric" ]
   },
   {
     name: "Sandshrew",
@@ -490,7 +490,7 @@ pokemons = [
     height: 0.6,
     weight: 12.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/sandshrew.png",
-    types: ["Ground"]
+    types: [ "Ground" ]
   },
   {
     name: "Sandslash",
@@ -507,7 +507,7 @@ pokemons = [
     height: 1.0,
     weight: 29.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/sandslash.png",
-    types: ["Ground"]
+    types: [ "Ground" ]
   },
   {
     name: "Nidoran♀",
@@ -524,7 +524,7 @@ pokemons = [
     height: 0.4,
     weight: 7.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidoran-f.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Nidorina",
@@ -541,7 +541,7 @@ pokemons = [
     height: 0.8,
     weight: 20.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidorina.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Nidoqueen",
@@ -558,7 +558,7 @@ pokemons = [
     height: 1.3,
     weight: 60.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidoqueen.png",
-    types: ["Poison", "Ground"]
+    types: [ "Poison", "Ground" ]
   },
   {
     name: "Nidoran♂",
@@ -575,7 +575,7 @@ pokemons = [
     height: 0.5,
     weight: 9.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidoran-m.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Nidorino",
@@ -592,7 +592,7 @@ pokemons = [
     height: 0.9,
     weight: 19.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidorino.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Nidoking",
@@ -609,7 +609,7 @@ pokemons = [
     height: 1.4,
     weight: 62.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/nidoking.png",
-    types: ["Poison", "Ground"]
+    types: [ "Poison", "Ground" ]
   },
   {
     name: "Clefairy",
@@ -626,7 +626,7 @@ pokemons = [
     height: 0.6,
     weight: 7.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/clefairy.png",
-    types: ["Fairy"]
+    types: [ "Fairy" ]
   },
   {
     name: "Clefable",
@@ -643,7 +643,7 @@ pokemons = [
     height: 1.3,
     weight: 40.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/clefable.png",
-    types: ["Fairy"]
+    types: [ "Fairy" ]
   },
   {
     name: "Vulpix",
@@ -660,7 +660,7 @@ pokemons = [
     height: 0.6,
     weight: 9.9,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/vulpix.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Ninetales",
@@ -677,7 +677,7 @@ pokemons = [
     height: 1.1,
     weight: 19.9,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/ninetales.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Jigglypuff",
@@ -694,7 +694,7 @@ pokemons = [
     height: 0.5,
     weight: 5.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/jigglypuff.png",
-    types: ["Normal", "Fairy"]
+    types: [ "Normal", "Fairy" ]
   },
   {
     name: "Wigglytuff",
@@ -711,7 +711,7 @@ pokemons = [
     height: 1.0,
     weight: 12.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/wigglytuff.png",
-    types: ["Normal", "Fairy"]
+    types: [ "Normal", "Fairy" ]
   },
   {
     name: "Zubat",
@@ -728,7 +728,7 @@ pokemons = [
     height: 0.8,
     weight: 7.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/zubat.png",
-    types: ["Poison", "Flying"]
+    types: [ "Poison", "Flying" ]
   },
   {
     name: "Golbat",
@@ -745,7 +745,7 @@ pokemons = [
     height: 1.6,
     weight: 55.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/golbat.png",
-    types: ["Poison", "Flying"]
+    types: [ "Poison", "Flying" ]
   },
   {
     name: "Oddish",
@@ -762,7 +762,7 @@ pokemons = [
     height: 0.5,
     weight: 5.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/oddish.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Gloom",
@@ -779,7 +779,7 @@ pokemons = [
     height: 0.8,
     weight: 8.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/gloom.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Vileplume",
@@ -796,7 +796,7 @@ pokemons = [
     height: 1.2,
     weight: 18.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/vileplume.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Paras",
@@ -813,7 +813,7 @@ pokemons = [
     height: 0.3,
     weight: 5.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/paras.png",
-    types: ["Bug", "Grass"]
+    types: [ "Bug", "Grass" ]
   },
   {
     name: "Parasect",
@@ -830,7 +830,7 @@ pokemons = [
     height: 1.0,
     weight: 29.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/parasect.png",
-    types: ["Bug", "Grass"]
+    types: [ "Bug", "Grass" ]
   },
   {
     name: "Venonat",
@@ -847,7 +847,7 @@ pokemons = [
     height: 1.0,
     weight: 30.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/venonat.png",
-    types: ["Bug", "Poison"]
+    types: [ "Bug", "Poison" ]
   },
   {
     name: "Venomoth",
@@ -864,7 +864,7 @@ pokemons = [
     height: 1.5,
     weight: 12.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/venomoth.png",
-    types: ["Bug", "Poison"]
+    types: [ "Bug", "Poison" ]
   },
   {
     name: "Diglett",
@@ -881,7 +881,7 @@ pokemons = [
     height: 0.2,
     weight: 0.8,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/diglett.png",
-    types: ["Ground"]
+    types: [ "Ground" ]
   },
   {
     name: "Dugtrio",
@@ -898,7 +898,7 @@ pokemons = [
     height: 0.7,
     weight: 33.3,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/dugtrio.png",
-    types: ["Ground"]
+    types: [ "Ground" ]
   },
   {
     name: "Meowth",
@@ -915,7 +915,7 @@ pokemons = [
     height: 0.4,
     weight: 4.2,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/meowth.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Persian",
@@ -932,7 +932,7 @@ pokemons = [
     height: 1.0,
     weight: 32.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/persian.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Psyduck",
@@ -949,7 +949,7 @@ pokemons = [
     height: 0.8,
     weight: 19.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/psyduck.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Golduck",
@@ -966,7 +966,7 @@ pokemons = [
     height: 1.7,
     weight: 76.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/golduck.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Mankey",
@@ -983,7 +983,7 @@ pokemons = [
     height: 0.5,
     weight: 28.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/mankey.png",
-    types: ["Fighting"]
+    types: [ "Fighting" ]
   },
   {
     name: "Primeape",
@@ -1000,7 +1000,7 @@ pokemons = [
     height: 1.0,
     weight: 32.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/primeape.png",
-    types: ["Fighting"]
+    types: [ "Fighting" ]
   },
   {
     name: "Growlithe",
@@ -1017,7 +1017,7 @@ pokemons = [
     height: 0.7,
     weight: 19.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/growlithe.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Arcanine",
@@ -1034,7 +1034,7 @@ pokemons = [
     height: 1.9,
     weight: 155.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/arcanine.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Poliwag",
@@ -1051,7 +1051,7 @@ pokemons = [
     height: 0.6,
     weight: 12.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/poliwag.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Poliwhirl",
@@ -1068,7 +1068,7 @@ pokemons = [
     height: 1.0,
     weight: 20.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/poliwhirl.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Poliwrath",
@@ -1085,7 +1085,7 @@ pokemons = [
     height: 1.3,
     weight: 54.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/poliwrath.png",
-    types: ["Water", "Fighting"]
+    types: [ "Water", "Fighting" ]
   },
   {
     name: "Abra",
@@ -1102,7 +1102,7 @@ pokemons = [
     height: 0.9,
     weight: 19.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/abra.png",
-    types: ["Psychic"]
+    types: [ "Psychic" ]
   },
   {
     name: "Kadabra",
@@ -1119,7 +1119,7 @@ pokemons = [
     height: 1.3,
     weight: 56.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/kadabra.png",
-    types: ["Psychic"]
+    types: [ "Psychic" ]
   },
   {
     name: "Alakazam",
@@ -1136,7 +1136,7 @@ pokemons = [
     height: 1.5,
     weight: 48.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/alakazam.png",
-    types: ["Psychic"]
+    types: [ "Psychic" ]
   },
   {
     name: "Machop",
@@ -1153,7 +1153,7 @@ pokemons = [
     height: 0.8,
     weight: 19.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/machop.png",
-    types: ["Fighting"]
+    types: [ "Fighting" ]
   },
   {
     name: "Machoke",
@@ -1170,7 +1170,7 @@ pokemons = [
     height: 1.5,
     weight: 70.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/machoke.png",
-    types: ["Fighting"]
+    types: [ "Fighting" ]
   },
   {
     name: "Machamp",
@@ -1187,7 +1187,7 @@ pokemons = [
     height: 1.6,
     weight: 130.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/machamp.png",
-    types: ["Fighting"]
+    types: [ "Fighting" ]
   },
   {
     name: "Bellsprout",
@@ -1204,7 +1204,7 @@ pokemons = [
     height: 0.7,
     weight: 4.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/bellsprout.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Weepinbell",
@@ -1221,7 +1221,7 @@ pokemons = [
     height: 1.0,
     weight: 6.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/weepinbell.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Victreebel",
@@ -1238,7 +1238,7 @@ pokemons = [
     height: 1.7,
     weight: 15.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/victreebel.png",
-    types: ["Grass", "Poison"]
+    types: [ "Grass", "Poison" ]
   },
   {
     name: "Tentacool",
@@ -1255,7 +1255,7 @@ pokemons = [
     height: 0.9,
     weight: 45.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/tentacool.png",
-    types: ["Water", "Poison"]
+    types: [ "Water", "Poison" ]
   },
   {
     name: "Tentacruel",
@@ -1272,7 +1272,7 @@ pokemons = [
     height: 1.6,
     weight: 55.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/tentacruel.png",
-    types: ["Water", "Poison"]
+    types: [ "Water", "Poison" ]
   },
   {
     name: "Geodude",
@@ -1289,7 +1289,7 @@ pokemons = [
     height: 0.4,
     weight: 20.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/geodude.png",
-    types: ["Rock", "Ground"]
+    types: [ "Rock", "Ground" ]
   },
   {
     name: "Graveler",
@@ -1306,7 +1306,7 @@ pokemons = [
     height: 1.0,
     weight: 105.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/graveler.png",
-    types: ["Rock", "Ground"]
+    types: [ "Rock", "Ground" ]
   },
   {
     name: "Golem",
@@ -1323,7 +1323,7 @@ pokemons = [
     height: 1.4,
     weight: 300.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/golem.png",
-    types: ["Rock", "Ground"]
+    types: [ "Rock", "Ground" ]
   },
   {
     name: "Ponyta",
@@ -1340,7 +1340,7 @@ pokemons = [
     height: 1.0,
     weight: 30.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/ponyta.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Rapidash",
@@ -1357,7 +1357,7 @@ pokemons = [
     height: 1.7,
     weight: 95.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/rapidash.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Slowpoke",
@@ -1374,7 +1374,7 @@ pokemons = [
     height: 1.2,
     weight: 36.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/slowpoke.png",
-    types: ["Water", "Psychic"]
+    types: [ "Water", "Psychic" ]
   },
   {
     name: "Slowbro",
@@ -1391,7 +1391,7 @@ pokemons = [
     height: 1.6,
     weight: 78.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/slowbro.png",
-    types: ["Water", "Psychic"]
+    types: [ "Water", "Psychic" ]
   },
   {
     name: "Magnemite",
@@ -1408,7 +1408,7 @@ pokemons = [
     height: 0.3,
     weight: 6.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/magnemite.png",
-    types: ["Electric", "Steel"]
+    types: [ "Electric", "Steel" ]
   },
   {
     name: "Magneton",
@@ -1425,7 +1425,7 @@ pokemons = [
     height: 1.0,
     weight: 60.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/magneton.png",
-    types: ["Electric", "Steel"]
+    types: [ "Electric", "Steel" ]
   },
   {
     name: "Farfetch'd",
@@ -1442,7 +1442,7 @@ pokemons = [
     height: 0.8,
     weight: 15.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/farfetchd.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Doduo",
@@ -1459,7 +1459,7 @@ pokemons = [
     height: 1.4,
     weight: 39.2,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/doduo.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Dodrio",
@@ -1476,7 +1476,7 @@ pokemons = [
     height: 1.8,
     weight: 85.2,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/dodrio.png",
-    types: ["Normal", "Flying"]
+    types: [ "Normal", "Flying" ]
   },
   {
     name: "Seel",
@@ -1493,7 +1493,7 @@ pokemons = [
     height: 1.1,
     weight: 90.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/seel.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Dewgong",
@@ -1510,7 +1510,7 @@ pokemons = [
     height: 1.7,
     weight: 120.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/dewgong.png",
-    types: ["Water", "Ice"]
+    types: [ "Water", "Ice" ]
   },
   {
     name: "Grimer",
@@ -1527,7 +1527,7 @@ pokemons = [
     height: 0.9,
     weight: 30.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/grimer.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Muk",
@@ -1544,7 +1544,7 @@ pokemons = [
     height: 1.2,
     weight: 30.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/muk.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Shellder",
@@ -1561,7 +1561,7 @@ pokemons = [
     height: 0.3,
     weight: 4.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/shellder.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Cloyster",
@@ -1578,7 +1578,7 @@ pokemons = [
     height: 1.5,
     weight: 132.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/cloyster.png",
-    types: ["Water", "Ice"]
+    types: [ "Water", "Ice" ]
   },
   {
     name: "Gastly",
@@ -1595,7 +1595,7 @@ pokemons = [
     height: 1.3,
     weight: 0.1,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/gastly.png",
-    types: ["Ghost", "Poison"]
+    types: [ "Ghost", "Poison" ]
   },
   {
     name: "Haunter",
@@ -1612,7 +1612,7 @@ pokemons = [
     height: 1.6,
     weight: 0.1,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/haunter.png",
-    types: ["Ghost", "Poison"]
+    types: [ "Ghost", "Poison" ]
   },
   {
     name: "Gengar",
@@ -1629,7 +1629,7 @@ pokemons = [
     height: 1.5,
     weight: 40.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/gengar.png",
-    types: ["Ghost", "Poison"]
+    types: [ "Ghost", "Poison" ]
   },
   {
     name: "Onix",
@@ -1646,7 +1646,7 @@ pokemons = [
     height: 8.8,
     weight: 210.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/onix.png",
-    types: ["Rock", "Ground"]
+    types: [ "Rock", "Ground" ]
   },
   {
     name: "Drowzee",
@@ -1663,7 +1663,7 @@ pokemons = [
     height: 1.0,
     weight: 32.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/drowzee.png",
-    types: ["Psychic"]
+    types: [ "Psychic" ]
   },
   {
     name: "Hypno",
@@ -1680,7 +1680,7 @@ pokemons = [
     height: 1.6,
     weight: 75.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/hypno.png",
-    types: ["Psychic"]
+    types: [ "Psychic" ]
   },
   {
     name: "Krabby",
@@ -1697,7 +1697,7 @@ pokemons = [
     height: 0.4,
     weight: 6.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/krabby.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Kingler",
@@ -1714,7 +1714,7 @@ pokemons = [
     height: 1.3,
     weight: 60.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/kingler.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Voltorb",
@@ -1731,7 +1731,7 @@ pokemons = [
     height: 0.5,
     weight: 10.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/voltorb.png",
-    types: ["Electric"]
+    types: [ "Electric" ]
   },
   {
     name: "Electrode",
@@ -1748,7 +1748,7 @@ pokemons = [
     height: 1.2,
     weight: 66.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/electrode.png",
-    types: ["Electric"]
+    types: [ "Electric" ]
   },
   {
     name: "Exeggcute",
@@ -1765,7 +1765,7 @@ pokemons = [
     height: 0.4,
     weight: 2.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/exeggcute.png",
-    types: ["Grass", "Psychic"]
+    types: [ "Grass", "Psychic" ]
   },
   {
     name: "Exeggutor",
@@ -1782,7 +1782,7 @@ pokemons = [
     height: 2.0,
     weight: 120.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/exeggutor.png",
-    types: ["Grass", "Psychic"]
+    types: [ "Grass", "Psychic" ]
   },
   {
     name: "Cubone",
@@ -1799,7 +1799,7 @@ pokemons = [
     height: 0.4,
     weight: 6.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/cubone.png",
-    types: ["Ground"]
+    types: [ "Ground" ]
   },
   {
     name: "Marowak",
@@ -1816,7 +1816,7 @@ pokemons = [
     height: 1.0,
     weight: 45.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/marowak.png",
-    types: ["Ground"]
+    types: [ "Ground" ]
   },
   {
     name: "Hitmonlee",
@@ -1833,7 +1833,7 @@ pokemons = [
     height: 1.5,
     weight: 49.8,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/hitmonlee.png",
-    types: ["Fighting"]
+    types: [ "Fighting" ]
   },
   {
     name: "Hitmonchan",
@@ -1850,7 +1850,7 @@ pokemons = [
     height: 1.4,
     weight: 50.2,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/hitmonchan.png",
-    types: ["Fighting"]
+    types: [ "Fighting" ]
   },
   {
     name: "Lickitung",
@@ -1867,7 +1867,7 @@ pokemons = [
     height: 1.2,
     weight: 65.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/lickitung.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Koffing",
@@ -1884,7 +1884,7 @@ pokemons = [
     height: 0.6,
     weight: 1.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/koffing.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Weezing",
@@ -1901,7 +1901,7 @@ pokemons = [
     height: 1.2,
     weight: 9.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/weezing.png",
-    types: ["Poison"]
+    types: [ "Poison" ]
   },
   {
     name: "Rhyhorn",
@@ -1918,7 +1918,7 @@ pokemons = [
     height: 1.0,
     weight: 115.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/rhyhorn.png",
-    types: ["Ground", "Rock"]
+    types: [ "Ground", "Rock" ]
   },
   {
     name: "Rhydon",
@@ -1935,7 +1935,7 @@ pokemons = [
     height: 1.9,
     weight: 120.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/rhydon.png",
-    types: ["Ground", "Rock"]
+    types: [ "Ground", "Rock" ]
   },
   {
     name: "Chansey",
@@ -1952,7 +1952,7 @@ pokemons = [
     height: 1.1,
     weight: 34.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/chansey.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Tangela",
@@ -1969,7 +1969,7 @@ pokemons = [
     height: 1.0,
     weight: 35.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/tangela.png",
-    types: ["Grass"]
+    types: [ "Grass" ]
   },
   {
     name: "Kangaskhan",
@@ -1986,7 +1986,7 @@ pokemons = [
     height: 2.2,
     weight: 80.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/kangaskhan.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Horsea",
@@ -2003,7 +2003,7 @@ pokemons = [
     height: 0.4,
     weight: 8.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/horsea.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Seadra",
@@ -2020,7 +2020,7 @@ pokemons = [
     height: 1.2,
     weight: 25.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/seadra.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Goldeen",
@@ -2037,7 +2037,7 @@ pokemons = [
     height: 0.6,
     weight: 15.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/goldeen.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Seaking",
@@ -2054,7 +2054,7 @@ pokemons = [
     height: 1.3,
     weight: 39.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/seaking.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Staryu",
@@ -2071,7 +2071,7 @@ pokemons = [
     height: 0.8,
     weight: 34.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/staryu.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Starmie",
@@ -2088,7 +2088,7 @@ pokemons = [
     height: 1.1,
     weight: 80.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/starmie.png",
-    types: ["Water", "Psychic"]
+    types: [ "Water", "Psychic" ]
   },
   {
     name: "Mr. Mime",
@@ -2105,7 +2105,7 @@ pokemons = [
     height: 1.3,
     weight: 54.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/mr-mime.png",
-    types: ["Psychic", "Fairy"]
+    types: [ "Psychic", "Fairy" ]
   },
   {
     name: "Scyther",
@@ -2122,7 +2122,7 @@ pokemons = [
     height: 1.5,
     weight: 56.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/scyther.png",
-    types: ["Bug", "Flying"]
+    types: [ "Bug", "Flying" ]
   },
   {
     name: "Jynx",
@@ -2139,7 +2139,7 @@ pokemons = [
     height: 1.4,
     weight: 40.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/jynx.png",
-    types: ["Ice", "Psychic"]
+    types: [ "Ice", "Psychic" ]
   },
   {
     name: "Electabuzz",
@@ -2156,7 +2156,7 @@ pokemons = [
     height: 1.1,
     weight: 30.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/electabuzz.png",
-    types: ["Electric"]
+    types: [ "Electric" ]
   },
   {
     name: "Magmar",
@@ -2173,7 +2173,7 @@ pokemons = [
     height: 1.3,
     weight: 44.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/magmar.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Pinsir",
@@ -2190,7 +2190,7 @@ pokemons = [
     height: 1.5,
     weight: 55.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/pinsir.png",
-    types: ["Bug"]
+    types: [ "Bug" ]
   },
   {
     name: "Tauros",
@@ -2207,7 +2207,7 @@ pokemons = [
     height: 1.4,
     weight: 88.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/tauros.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Magikarp",
@@ -2224,7 +2224,7 @@ pokemons = [
     height: 0.9,
     weight: 10.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/magikarp.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Gyarados",
@@ -2241,7 +2241,7 @@ pokemons = [
     height: 6.5,
     weight: 235.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/gyarados.png",
-    types: ["Water", "Flying"]
+    types: [ "Water", "Flying" ]
   },
   {
     name: "Lapras",
@@ -2258,7 +2258,7 @@ pokemons = [
     height: 2.5,
     weight: 220.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/lapras.png",
-    types: ["Water", "Ice"]
+    types: [ "Water", "Ice" ]
   },
   {
     name: "Ditto",
@@ -2275,7 +2275,7 @@ pokemons = [
     height: 0.3,
     weight: 4.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/ditto.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Eevee",
@@ -2292,7 +2292,7 @@ pokemons = [
     height: 0.3,
     weight: 6.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/eevee.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Vaporeon",
@@ -2309,7 +2309,7 @@ pokemons = [
     height: 1.0,
     weight: 29.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/vaporeon.png",
-    types: ["Water"]
+    types: [ "Water" ]
   },
   {
     name: "Jolteon",
@@ -2326,7 +2326,7 @@ pokemons = [
     height: 0.8,
     weight: 24.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/jolteon.png",
-    types: ["Electric"]
+    types: [ "Electric" ]
   },
   {
     name: "Flareon",
@@ -2343,7 +2343,7 @@ pokemons = [
     height: 0.9,
     weight: 25.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/flareon.png",
-    types: ["Fire"]
+    types: [ "Fire" ]
   },
   {
     name: "Porygon",
@@ -2360,7 +2360,7 @@ pokemons = [
     height: 0.8,
     weight: 36.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/porygon.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Omanyte",
@@ -2377,7 +2377,7 @@ pokemons = [
     height: 0.4,
     weight: 7.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/omanyte.png",
-    types: ["Rock", "Water"]
+    types: [ "Rock", "Water" ]
   },
   {
     name: "Omastar",
@@ -2394,7 +2394,7 @@ pokemons = [
     height: 1.0,
     weight: 35.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/omastar.png",
-    types: ["Rock", "Water"]
+    types: [ "Rock", "Water" ]
   },
   {
     name: "Kabuto",
@@ -2411,7 +2411,7 @@ pokemons = [
     height: 0.5,
     weight: 11.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/kabuto.png",
-    types: ["Rock", "Water"]
+    types: [ "Rock", "Water" ]
   },
   {
     name: "Kabutops",
@@ -2428,7 +2428,7 @@ pokemons = [
     height: 1.3,
     weight: 40.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/kabutops.png",
-    types: ["Rock", "Water"]
+    types: [ "Rock", "Water" ]
   },
   {
     name: "Aerodactyl",
@@ -2445,7 +2445,7 @@ pokemons = [
     height: 1.8,
     weight: 59.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/aerodactyl.png",
-    types: ["Rock", "Flying"]
+    types: [ "Rock", "Flying" ]
   },
   {
     name: "Snorlax",
@@ -2462,7 +2462,7 @@ pokemons = [
     height: 2.1,
     weight: 460.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/snorlax.png",
-    types: ["Normal"]
+    types: [ "Normal" ]
   },
   {
     name: "Articuno",
@@ -2479,7 +2479,7 @@ pokemons = [
     height: 1.7,
     weight: 55.4,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/articuno.png",
-    types: ["Ice", "Flying"]
+    types: [ "Ice", "Flying" ]
   },
   {
     name: "Zapdos",
@@ -2496,7 +2496,7 @@ pokemons = [
     height: 1.6,
     weight: 52.6,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/zapdos.png",
-    types: ["Electric", "Flying"]
+    types: [ "Electric", "Flying" ]
   },
   {
     name: "Moltres",
@@ -2513,7 +2513,7 @@ pokemons = [
     height: 2.0,
     weight: 60.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/moltres.png",
-    types: ["Fire", "Flying"]
+    types: [ "Fire", "Flying" ]
   },
   {
     name: "Dratini",
@@ -2530,7 +2530,7 @@ pokemons = [
     height: 1.8,
     weight: 3.3,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/dratini.png",
-    types: ["Dragon"]
+    types: [ "Dragon" ]
   },
   {
     name: "Dragonair",
@@ -2547,7 +2547,7 @@ pokemons = [
     height: 4.0,
     weight: 16.5,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/dragonair.png",
-    types: ["Dragon"]
+    types: [ "Dragon" ]
   },
   {
     name: "Dragonite",
@@ -2564,7 +2564,7 @@ pokemons = [
     height: 2.2,
     weight: 210.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/dragonite.png",
-    types: ["Dragon", "Flying"]
+    types: [ "Dragon", "Flying" ]
   },
   {
     name: "Mewtwo",
@@ -2581,7 +2581,7 @@ pokemons = [
     height: 2.0,
     weight: 122.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/mewtwo.png",
-    types: ["Psychic"]
+    types: [ "Psychic" ]
   },
   {
     name: "Mew",
@@ -2598,7 +2598,7 @@ pokemons = [
     height: 0.4,
     weight: 4.0,
     image_url: "https://img.pokemondb.net/sprites/x-y/normal/mew.png",
-    types: ["Psychic"]
+    types: [ "Psychic" ]
   }
 ]
 
@@ -2606,10 +2606,10 @@ pokemons = [
 pokemons.each do |pokemon_data|
   # Extract the types array from the pokemon data
   pokemon_types = pokemon_data.delete(:types)
-  
+
   # Create the Pokemon
   pokemon = Pokemon.create!(pokemon_data)
-  
+
   # Associate the Pokemon with its types
   pokemon_types.each do |type_name|
     PokemonType.create!(
@@ -2618,3 +2618,32 @@ pokemons.each do |pokemon_data|
     )
   end
 end
+
+# Create evolution chains
+evolution_data = [
+  # Eevee family
+  {
+    pre_evolution_id: Pokemon.find_by(number: 133).id,  # Eevee
+    evolved_pokemon_id: Pokemon.find_by(number: 134).id # Vaporeon
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 133).id,  # Eevee
+    evolved_pokemon_id: Pokemon.find_by(number: 135).id # Jolteon
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 133).id,  # Eevee
+    evolved_pokemon_id: Pokemon.find_by(number: 136).id # Flareon
+  },
+
+  # Bulbasaur family (linear evolution)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 1).id,  # Bulbasaur
+    evolved_pokemon_id: Pokemon.find_by(number: 2).id # Ivysaur
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 2).id,  # Ivysaur
+    evolved_pokemon_id: Pokemon.find_by(number: 3).id # Venusaur
+  }
+]
+
+Evolution.create!(evolution_data)

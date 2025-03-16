@@ -61,11 +61,11 @@ class PokemonsController < ApplicationController
   def search
     query = params[:query]
     @pokemons = if query.present?
-                  Pokemon.where("name LIKE ? COLLATE NOCASE", "%#{query}%")
-                else
-                  Pokemon.all
-                end
-    render 'home/index'
+                  Pokemon.where("name LIKE ? COLLATE NOCASE", "%#{query}%").page(params[:page]).per(12)
+    else
+                  Pokemon.all.page(params[:page]).per(12)
+    end
+    render "home/index"
   end
 
   private
