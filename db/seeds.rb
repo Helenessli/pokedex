@@ -1,7 +1,8 @@
-# Clear existing data
+# Clear existing data in the correct order to handle foreign key constraints
+Evolution.destroy_all
+PokemonType.destroy_all
 Pokemon.destroy_all
 Type.destroy_all
-PokemonType.destroy_all
 
 # Create types with their color codes
 types = [
@@ -2621,7 +2622,367 @@ end
 
 # Create evolution chains
 evolution_data = [
-  # Eevee family
+  # Bulbasaur family (1-3)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 1).id,  # Bulbasaur
+    evolved_pokemon_id: Pokemon.find_by(number: 2).id  # Ivysaur
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 2).id,  # Ivysaur
+    evolved_pokemon_id: Pokemon.find_by(number: 3).id  # Venusaur
+  },
+
+  # Charmander family (4-6)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 4).id,  # Charmander
+    evolved_pokemon_id: Pokemon.find_by(number: 5).id  # Charmeleon
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 5).id,  # Charmeleon
+    evolved_pokemon_id: Pokemon.find_by(number: 6).id  # Charizard
+  },
+
+  # Squirtle family (7-9)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 7).id,  # Squirtle
+    evolved_pokemon_id: Pokemon.find_by(number: 8).id  # Wartortle
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 8).id,  # Wartortle
+    evolved_pokemon_id: Pokemon.find_by(number: 9).id  # Blastoise
+  },
+
+  # Caterpie family (10-12)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 10).id,  # Caterpie
+    evolved_pokemon_id: Pokemon.find_by(number: 11).id # Metapod
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 11).id,  # Metapod
+    evolved_pokemon_id: Pokemon.find_by(number: 12).id # Butterfree
+  },
+
+  # Weedle family (13-15)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 13).id,  # Weedle
+    evolved_pokemon_id: Pokemon.find_by(number: 14).id # Kakuna
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 14).id,  # Kakuna
+    evolved_pokemon_id: Pokemon.find_by(number: 15).id # Beedrill
+  },
+
+  # Pidgey family (16-18)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 16).id,  # Pidgey
+    evolved_pokemon_id: Pokemon.find_by(number: 17).id # Pidgeotto
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 17).id,  # Pidgeotto
+    evolved_pokemon_id: Pokemon.find_by(number: 18).id # Pidgeot
+  },
+
+  # Rattata family (19-20)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 19).id,  # Rattata
+    evolved_pokemon_id: Pokemon.find_by(number: 20).id # Raticate
+  },
+
+  # Spearow family (21-22)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 21).id,  # Spearow
+    evolved_pokemon_id: Pokemon.find_by(number: 22).id # Fearow
+  },
+
+  # Ekans family (23-24)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 23).id,  # Ekans
+    evolved_pokemon_id: Pokemon.find_by(number: 24).id # Arbok
+  },
+
+  # Pikachu family (25-26)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 25).id,  # Ekans
+    evolved_pokemon_id: Pokemon.find_by(number: 26).id # Arbok
+  },
+
+  # Sandshrew family (27-28)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 27).id,  # Sandshrew
+    evolved_pokemon_id: Pokemon.find_by(number: 28).id # Sandslash
+  },
+
+  # Nidoran♀ family (29-31)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 29).id,  # Nidoran♀
+    evolved_pokemon_id: Pokemon.find_by(number: 30).id # Nidorina
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 30).id,  # Nidorina
+    evolved_pokemon_id: Pokemon.find_by(number: 31).id # Nidoqueen
+  },
+
+  # Nidoran♂ family (32-34)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 32).id,  # Nidoran♂
+    evolved_pokemon_id: Pokemon.find_by(number: 33).id # Nidorino
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 33).id,  # Nidorino
+    evolved_pokemon_id: Pokemon.find_by(number: 34).id # Nidoking
+  },
+
+  # Clefairy family (35-36)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 35).id,  # Clefairy
+    evolved_pokemon_id: Pokemon.find_by(number: 36).id # Clefable
+  },
+
+  # Vulpix family (37-38)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 37).id,  # Vulpix
+    evolved_pokemon_id: Pokemon.find_by(number: 38).id # Ninetales
+  },
+
+  # Jigglypuff family (39-40)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 39).id,  # Jigglypuff
+    evolved_pokemon_id: Pokemon.find_by(number: 40).id # Wigglytuff
+  },
+
+  # Zubat family (41-42)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 41).id,  # Zubat
+    evolved_pokemon_id: Pokemon.find_by(number: 42).id # Golbat
+  },
+
+  # Oddish family (43-45)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 43).id,  # Oddish
+    evolved_pokemon_id: Pokemon.find_by(number: 44).id # Gloom
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 44).id,  # Gloom
+    evolved_pokemon_id: Pokemon.find_by(number: 45).id # Vileplume
+  },
+
+  # Paras family (46-47)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 46).id,  # Paras
+    evolved_pokemon_id: Pokemon.find_by(number: 47).id # Parasect
+  },
+
+  # Venonat family (48-49)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 48).id,  # Venonat
+    evolved_pokemon_id: Pokemon.find_by(number: 49).id # Venomoth
+  },
+
+  # Diglett family (50-51)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 50).id,  # Diglett
+    evolved_pokemon_id: Pokemon.find_by(number: 51).id # Dugtrio
+  },
+
+  # Meowth family (52-53)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 52).id,  # Meowth
+    evolved_pokemon_id: Pokemon.find_by(number: 53).id # Persian
+  },
+
+  # Psyduck family (54-55)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 54).id,  # Psyduck
+    evolved_pokemon_id: Pokemon.find_by(number: 55).id # Golduck
+  },
+
+  # Mankey family (56-57)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 56).id,  # Mankey
+    evolved_pokemon_id: Pokemon.find_by(number: 57).id # Primeape
+  },
+
+  # Growlithe family (58-59)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 58).id,  # Growlithe
+    evolved_pokemon_id: Pokemon.find_by(number: 59).id # Arcanine
+  },
+
+  # Poliwag family (60-62)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 60).id,  # Poliwag
+    evolved_pokemon_id: Pokemon.find_by(number: 61).id # Poliwhirl
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 61).id,  # Poliwhirl
+    evolved_pokemon_id: Pokemon.find_by(number: 62).id # Poliwrath
+  },
+
+  # Abra family (63-65)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 63).id,  # Abra
+    evolved_pokemon_id: Pokemon.find_by(number: 64).id # Kadabra
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 64).id,  # Kadabra
+    evolved_pokemon_id: Pokemon.find_by(number: 65).id # Alakazam
+  },
+
+  # Machop family (66-68)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 66).id,  # Machop
+    evolved_pokemon_id: Pokemon.find_by(number: 67).id # Machoke
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 67).id,  # Machoke
+    evolved_pokemon_id: Pokemon.find_by(number: 68).id # Machamp
+  },
+
+  # Bellsprout family (69-71)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 69).id,  # Bellsprout
+    evolved_pokemon_id: Pokemon.find_by(number: 70).id # Weepinbell
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 70).id,  # Weepinbell
+    evolved_pokemon_id: Pokemon.find_by(number: 71).id # Victreebel
+  },
+
+  # Tentacool family (72-73)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 72).id,  # Tentacool
+    evolved_pokemon_id: Pokemon.find_by(number: 73).id # Tentacruel
+  },
+
+  # Geodude family (74-76)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 74).id,  # Geodude
+    evolved_pokemon_id: Pokemon.find_by(number: 75).id # Graveler
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 75).id,  # Graveler
+    evolved_pokemon_id: Pokemon.find_by(number: 76).id # Golem
+  },
+
+  # Ponyta family (77-78)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 77).id,  # Ponyta
+    evolved_pokemon_id: Pokemon.find_by(number: 78).id # Rapidash
+  },
+
+  # Slowpoke family (79-80)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 79).id,  # Slowpoke
+    evolved_pokemon_id: Pokemon.find_by(number: 80).id # Slowbro
+  },
+
+  # Magnemite family (81-82)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 81).id,  # Magnemite
+    evolved_pokemon_id: Pokemon.find_by(number: 82).id # Magneton
+  },
+
+  # Doduo family (84-85)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 84).id,  # Doduo
+    evolved_pokemon_id: Pokemon.find_by(number: 85).id # Dodrio
+  },
+
+  # Seel family (86-87)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 86).id,  # Seel
+    evolved_pokemon_id: Pokemon.find_by(number: 87).id # Dewgong
+  },
+
+  # Grimer family (88-89)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 88).id,  # Grimer
+    evolved_pokemon_id: Pokemon.find_by(number: 89).id # Muk
+  },
+
+  # Shellder family (90-91)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 90).id,  # Shellder
+    evolved_pokemon_id: Pokemon.find_by(number: 91).id # Cloyster
+  },
+
+  # Gastly family (92-94)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 92).id,  # Gastly
+    evolved_pokemon_id: Pokemon.find_by(number: 93).id # Haunter
+  },
+  {
+    pre_evolution_id: Pokemon.find_by(number: 93).id,  # Haunter
+    evolved_pokemon_id: Pokemon.find_by(number: 94).id # Gengar
+  },
+
+  # Drowzee family (96-97)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 96).id,  # Drowzee
+    evolved_pokemon_id: Pokemon.find_by(number: 97).id # Hypno
+  },
+
+  # Krabby family (98-99)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 98).id,  # Krabby
+    evolved_pokemon_id: Pokemon.find_by(number: 99).id # Kingler
+  },
+
+  # Voltorb family (100-101)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 100).id,  # Voltorb
+    evolved_pokemon_id: Pokemon.find_by(number: 101).id # Electrode
+  },
+
+  # Exeggcute family (102-103)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 102).id,  # Exeggcute
+    evolved_pokemon_id: Pokemon.find_by(number: 103).id # Exeggutor
+  },
+
+  # Cubone family (104-105)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 104).id,  # Cubone
+    evolved_pokemon_id: Pokemon.find_by(number: 105).id # Marowak
+  },
+
+  # Koffing family (109-110)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 109).id,  # Koffing
+    evolved_pokemon_id: Pokemon.find_by(number: 110).id # Weezing
+  },
+
+  # Rhyhorn family (111-112)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 111).id,  # Rhyhorn
+    evolved_pokemon_id: Pokemon.find_by(number: 112).id # Rhydon
+  },
+
+  # Horsea family (116-117)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 116).id,  # Horsea
+    evolved_pokemon_id: Pokemon.find_by(number: 117).id # Seadra
+  },
+
+  # Goldeen family (118-119)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 118).id,  # Goldeen
+    evolved_pokemon_id: Pokemon.find_by(number: 119).id # Seaking
+  },
+
+  # Staryu family (120-121)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 120).id,  # Staryu
+    evolved_pokemon_id: Pokemon.find_by(number: 121).id # Starmie
+  },
+
+  # Magikarp family (129-130)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 129).id,  # Magikarp
+    evolved_pokemon_id: Pokemon.find_by(number: 130).id # Gyarados
+  },
+
+  # Eevee family (133-136)
   {
     pre_evolution_id: Pokemon.find_by(number: 133).id,  # Eevee
     evolved_pokemon_id: Pokemon.find_by(number: 134).id # Vaporeon
@@ -2635,14 +2996,26 @@ evolution_data = [
     evolved_pokemon_id: Pokemon.find_by(number: 136).id # Flareon
   },
 
-  # Bulbasaur family (linear evolution)
+  # Omanyte family (138-139)
   {
-    pre_evolution_id: Pokemon.find_by(number: 1).id,  # Bulbasaur
-    evolved_pokemon_id: Pokemon.find_by(number: 2).id # Ivysaur
+    pre_evolution_id: Pokemon.find_by(number: 138).id,  # Omanyte
+    evolved_pokemon_id: Pokemon.find_by(number: 139).id # Omastar
+  },
+
+  # Kabuto family (140-141)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 140).id,  # Kabuto
+    evolved_pokemon_id: Pokemon.find_by(number: 141).id # Kabutops
+  },
+
+  # Dratini family (147-149)
+  {
+    pre_evolution_id: Pokemon.find_by(number: 147).id,  # Dratini
+    evolved_pokemon_id: Pokemon.find_by(number: 148).id # Dragonair
   },
   {
-    pre_evolution_id: Pokemon.find_by(number: 2).id,  # Ivysaur
-    evolved_pokemon_id: Pokemon.find_by(number: 3).id # Venusaur
+    pre_evolution_id: Pokemon.find_by(number: 148).id,  # Dragonair
+    evolved_pokemon_id: Pokemon.find_by(number: 149).id # Dragonite
   }
 ]
 
