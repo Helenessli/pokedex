@@ -28,7 +28,33 @@
         </div>
       </div>
       
-      <%= link_to "Back to Pokédex", root_path, class: "btn btn-outline-secondary" %>
+      <div class="card shadow mb-4" style="border: none; border-radius: 1rem;">
+        <div class="card-body">
+          <h4 class="fw-bold mb-4">Evolution</h4>
+          <div class="evolution-family d-flex justify-content-center align-items-center">
+            <% base_pokemon = get_base_pokemon(@pokemon) %>
+            <% evolution_stages = get_all_evolutions(base_pokemon) %>
+            
+            <% if evolution_stages.length > 1 %>
+              <%# Display all evolution stages %>
+              <% evolution_stages.each_with_index do |stage, index| %>
+                <div class="evolution-branches d-flex flex-wrap justify-content-center gap-4">
+                  <% stage.each do |pokemon| %>
+                    <div class="evolution-stage text-center">
+                      <%= link_to pokemon_path(pokemon) do %>
+                        <img src="<%= pokemon.image_url %>" alt="<%= pokemon.name %>" class="img-fluid" style="max-width: 80px;">
+                        <p class="mt-2 mb-0 small"><%= pokemon.name %></p>
+                      <% end %>
+                    </div>
+                  <% end %>
+                </div>
+              <% end %>
+            <% else %>
+              <p class="text-muted mb-0">Does not evolve</p>
+            <% end %>
+          </div>
+        </div>
+      </div>
     </div>
     
     <div class="col-md-8">
@@ -111,56 +137,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="card shadow mt-4" style="border: none; border-radius: 1rem;">
-  <div class="card-body">
-    <h3 class="fw-bold mb-4">Evolution Chain</h3>
-    <div class="evolution-family d-flex justify-content-center align-items-center">
-      <%# Get the first evolution in the chain %>
-      <% base_pokemon = @pokemon %>
-      <% while base_pokemon.pre_evolutions.present? %>
-        <% base_pokemon = base_pokemon.pre_evolutions.first %>
-      <% end %>
-
-      <%# Helper method to get all evolution stages %>
-      <% def get_all_evolutions(pokemon, seen = Set.new) %>
-        <% stages = [[pokemon]] %>
-        <% current_stage = [pokemon] %>
-        <% seen.add(pokemon.id) %>
-        
-        <% while current_stage.any? %>
-          <% next_stage = [] %>
-          <% current_stage.each do |p| %>
-            <% p.evolved_forms.each do |evolution| %>
-              <% next_stage << evolution unless seen.include?(evolution.id) %>
-              <% seen.add(evolution.id) %>
-            <% end %>
-          <% end %>
-          <% stages << next_stage if next_stage.any? %>
-          <% current_stage = next_stage %>
-        <% end %>
-        <% stages %>
-      <% end %>
-
-      <% evolution_stages = get_all_evolutions(base_pokemon) %>
-      
-      <%# Display all evolution stages %>
-      <% evolution_stages.each_with_index do |stage, index| %>
-        <%# Display Pokemon in current stage %>
-        <div class="evolution-branches d-flex flex-wrap justify-content-center gap-4">
-          <% stage.each do |pokemon| %>
-            <div class="evolution-stage text-center">
-              <%= link_to pokemon_path(pokemon) do %>
-                <img src="<%= pokemon.image_url %>" alt="<%= pokemon.name %>" class="img-fluid" style="max-width: 120px;">
-                <p class="mt-2 mb-0"><%= pokemon.name %></p>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
     </div>
   </div>
 </div>

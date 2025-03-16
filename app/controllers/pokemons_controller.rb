@@ -1,4 +1,5 @@
 class PokemonsController < ApplicationController
+  include PokemonEvolutionHelper
   before_action :set_pokemon, only: %i[ show edit update destroy ]
 
   # GET /pokemons or /pokemons.json
