@@ -9,7 +9,13 @@
     </ul>
     <%= form_with url: search_path, method: :get, class: "form-inline my-2 my-lg-0" do |f| %>
       <%= f.text_field :query, class: "form-control mr-sm-2", placeholder: "Search", "aria-label": "Search" %>
-      <%= f.submit "Search", class: "btn btn-outline-success my-2 my-sm-0" %>
+      <%= button_tag type: 'submit', 
+          class: "btn btn-sm", 
+          style: "background-color: #ff534f; width: 38px; height: 38px; padding: 6px; border-radius: 10px;",
+          onmouseover: "this.style.backgroundColor='#cc4340'",
+          onmouseout: "this.style.backgroundColor='#ff534f'" do %>
+        <%= image_tag "whitepokeball-nobg.png", height: 20, alt: "Search" %>
+      <% end %>
     <% end %>
   </div>
 </nav>
