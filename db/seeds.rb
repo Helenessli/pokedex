@@ -9,7 +9,7 @@ types = [
   { name: "Normal", color_code: "#C5C5B5" },
   { name: "Fire", color_code: "#F59860" },
   { name: "Water", color_code: "#7FA2F2" },
-  { name: "Electric", color_code: "#F9DA5E" },
+  { name: "Electric", color_code: "#FFE773" },
   { name: "Grass", color_code: "#8CD067" },
   { name: "Ice", color_code: "#ACE1E1" },
   { name: "Fighting", color_code: "#EB6D67" },
@@ -20,7 +20,7 @@ types = [
   { name: "Bug", color_code: "#B8C83A" },
   { name: "Rock", color_code: "#C9B158" },
   { name: "Ghost", color_code: "#8871A9" },
-  { name: "Dragon", color_code: "#8B5CF9" },
+  { name: "Dragon", color_code: "#A785FA" },
   { name: "Dark", color_code: "#8B7468" },
   { name: "Steel", color_code: "#C6C6D9" },
   { name: "Fairy", color_code: "#F0A9B8" }
