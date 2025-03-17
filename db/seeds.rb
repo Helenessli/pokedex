@@ -6,24 +6,24 @@ Type.destroy_all
 
 # Create types with their color codes
 types = [
-  { name: "Normal", color_code: "#A8A878" },
-  { name: "Fire", color_code: "#F08030" },
-  { name: "Water", color_code: "#6890F0" },
-  { name: "Electric", color_code: "#F8D030" },
-  { name: "Grass", color_code: "#78C850" },
-  { name: "Ice", color_code: "#98D8D8" },
-  { name: "Fighting", color_code: "#C03028" },
-  { name: "Poison", color_code: "#A040A0" },
-  { name: "Ground", color_code: "#E0C068" },
-  { name: "Flying", color_code: "#A890F0" },
-  { name: "Psychic", color_code: "#F85888" },
-  { name: "Bug", color_code: "#A8B820" },
-  { name: "Rock", color_code: "#B8A038" },
-  { name: "Ghost", color_code: "#705898" },
-  { name: "Dragon", color_code: "#7038F8" },
-  { name: "Dark", color_code: "#705848" },
-  { name: "Steel", color_code: "#B8B8D0" },
-  { name: "Fairy", color_code: "#EE99AC" }
+  { name: "Normal", color_code: "#C5C5B5" },
+  { name: "Fire", color_code: "#F59860" },
+  { name: "Water", color_code: "#7FA2F2" },
+  { name: "Electric", color_code: "#F9DA5E" },
+  { name: "Grass", color_code: "#8CD067" },
+  { name: "Ice", color_code: "#ACE1E1" },
+  { name: "Fighting", color_code: "#EB6D67" },
+  { name: "Poison", color_code: "#D169D1" },
+  { name: "Ground", color_code: "#E5CC85" },
+  { name: "Flying", color_code: "#C7B4F8" },
+  { name: "Psychic", color_code: "#F97298" },
+  { name: "Bug", color_code: "#B8C83A" },
+  { name: "Rock", color_code: "#C9B158" },
+  { name: "Ghost", color_code: "#8871A9" },
+  { name: "Dragon", color_code: "#8B5CF9" },
+  { name: "Dark", color_code: "#8B7468" },
+  { name: "Steel", color_code: "#C6C6D9" },
+  { name: "Fairy", color_code: "#F0A9B8" }
 ]
 
 # Create all types
