@@ -88,7 +88,7 @@
               <span><%= @pokemon.hp %></span>
             </div>
             <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-success" role="progressbar" style="width: <%= (@pokemon.hp / 255.0) * 100 %>%" aria-valuenow="<%= @pokemon.hp %>" aria-valuemin="0" aria-valuemax="255"></div>
+              <div class="progress-bar" role="progressbar" style="width: <%= (@pokemon.hp / 255.0) * 100 %>%; background-color: #4CAF50;" aria-valuenow="<%= @pokemon.hp %>" aria-valuemin="0" aria-valuemax="255"></div>
             </div>
           </div>
           
@@ -98,7 +98,7 @@
               <span><%= @pokemon.atk %></span>
             </div>
             <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: <%= (@pokemon.atk / 255.0) * 100 %>%" aria-valuenow="<%= @pokemon.atk %>" aria-valuemin="0" aria-valuemax="255"></div>
+              <div class="progress-bar" role="progressbar" style="width: <%= (@pokemon.atk / 150.0) * 100 %>%; background-color: #FF4444;" aria-valuenow="<%= @pokemon.atk %>" aria-valuemin="0" aria-valuemax="255"></div>
             </div>
           </div>
           
@@ -108,7 +108,7 @@
               <span><%= @pokemon.def %></span>
             </div>
             <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: <%= (@pokemon.def / 255.0) * 100 %>%" aria-valuenow="<%= @pokemon.def %>" aria-valuemin="0" aria-valuemax="255"></div>
+              <div class="progress-bar" role="progressbar" style="width: <%= (@pokemon.def / 250.0) * 100 %>%; background-color: #2196F3;" aria-valuenow="<%= @pokemon.def %>" aria-valuemin="0" aria-valuemax="255"></div>
             </div>
           </div>
           
@@ -118,7 +118,7 @@
               <span><%= @pokemon.spatk %></span>
             </div>
             <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-warning" role="progressbar" style="width: <%= (@pokemon.spatk / 255.0) * 100 %>%" aria-valuenow="<%= @pokemon.spatk %>" aria-valuemin="0" aria-valuemax="255"></div>
+              <div class="progress-bar" role="progressbar" style="width: <%= (@pokemon.spatk / 150.0) * 100 %>%; background-color: #BA68C8;" aria-valuenow="<%= @pokemon.spatk %>" aria-valuemin="0" aria-valuemax="255"></div>
             </div>
           </div>
           
@@ -128,7 +128,7 @@
               <span><%= @pokemon.spdef %></span>
             </div>
             <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-info" role="progressbar" style="width: <%= (@pokemon.spdef / 255.0) * 100 %>%" aria-valuenow="<%= @pokemon.spdef %>" aria-valuemin="0" aria-valuemax="255"></div>
+              <div class="progress-bar" role="progressbar" style="width: <%= (@pokemon.spdef / 250.0) * 100 %>%; background-color: #F06292;" aria-valuenow="<%= @pokemon.spdef %>" aria-valuemin="0" aria-valuemax="255"></div>
             </div>
           </div>
           
@@ -138,7 +138,7 @@
               <span><%= @pokemon.spd %></span>
             </div>
             <div class="progress" style="height: 10px;">
-              <div class="progress-bar bg-secondary" role="progressbar" style="width: <%= (@pokemon.spd / 255.0) * 100 %>%" aria-valuenow="<%= @pokemon.spd %>" aria-valuemin="0" aria-valuemax="255"></div>
+              <div class="progress-bar" role="progressbar" style="width: <%= (@pokemon.spd / 150.0) * 100 %>%; background-color: #FFD54F;" aria-valuenow="<%= @pokemon.spd %>" aria-valuemin="0" aria-valuemax="255"></div>
             </div>
           </div>
           
