@@ -70,12 +70,10 @@ class PokemonsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_pokemon
       @pokemon = Pokemon.find(params.expect(:id))
     end
 
-    # Only allow a list of trusted parameters through.
     def pokemon_params
       params.expect(pokemon: [ :name, :number, :male, :description, :hp, :atk, :def, :spatk, :spdef, :spd, :tot, :height, :weight ])
     end

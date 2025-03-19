@@ -77,24 +77,22 @@ module PokemonsHelper
   def calculate_weaknesses(pokemon)
     return [] if pokemon.types.empty?
 
-    # Initialize a hash to track effectiveness multipliers for each type
     effectiveness = Hash.new(1.0)
 
     pokemon.types.each do |type|
       type_data = TYPE_EFFECTIVENESS[type.name.downcase]
 
-      # Add weaknesses (2x damage)
+      # add weaknesses (2x damage)
       type_data[:weak_to].each do |weak_type|
         effectiveness[weak_type] *= 2.0
       end
 
-      # Add resistances (0.5x damage)
+      # add resistances (0.5x damage)
       type_data[:resists].each do |resist_type|
         effectiveness[resist_type] *= 0.5
       end
     end
 
-    # Return only types that result in weakness (multiplier > 1)
     effectiveness.select { |_, multiplier| multiplier > 1 }.keys
   end
 end
