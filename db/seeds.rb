@@ -1,4 +1,3 @@
-# Clear existing data in the correct order to handle foreign key constraints
 Evolution.destroy_all
 PokemonType.destroy_all
 Pokemon.destroy_all
