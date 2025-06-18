@@ -2604,13 +2604,10 @@ pokemons = [
 
 # Insert the Pokemon data and associate with types
 pokemons.each do |pokemon_data|
-  # Extract the types array from the pokemon data
   pokemon_types = pokemon_data.delete(:types)
 
-  # Create the Pokemon
   pokemon = Pokemon.create!(pokemon_data)
 
-  # Associate the Pokemon with its types
   pokemon_types.each do |type_name|
     PokemonType.create!(
       pokemon: pokemon,
