@@ -22,7 +22,6 @@ class Pokemon < ApplicationRecord
     base = base_form
     family = { base.id => { pokemon: base, evolutions: [] } }
 
-    # Queue for breadth-first traversal
     queue = [ base ]
 
     while queue.any?
